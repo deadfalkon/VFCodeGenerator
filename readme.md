@@ -1,4 +1,4 @@
-#CFCodeGenerator
+#VFCodeGenerator
 
 Generate Objective-C header and implement ion files based on an easy plist declaration format
 
