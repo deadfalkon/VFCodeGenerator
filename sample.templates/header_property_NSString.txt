@@ -1,0 +1,1 @@
+@property (nonatomic, $retainType$) $type$ $name$;

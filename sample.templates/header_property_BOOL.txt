@@ -1,0 +1,5 @@
+@property (nonatomic, assign) BOOL $name$;
+
+- (void)remove$Name$;
+- (BOOL)is$Name$;
+

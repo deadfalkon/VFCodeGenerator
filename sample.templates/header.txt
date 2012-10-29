@@ -1,0 +1,13 @@
+@interface $classname$ : $inherits-from$
+
+$$properties$$
+
++ ($classname$*) newEmpty$classname$;
+
+@end
+
+@interface NSMutableDictionary($classname$)
+
+@property (nonatomic,strong) $classname$* $keyInParent$;
+
+@end

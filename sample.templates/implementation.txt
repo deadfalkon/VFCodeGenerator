@@ -1,0 +1,59 @@
+#import "$classname$.h"
+
+@interface $classname$()
+
+@property (nonatomic, strong) NSMutableDictionary* dict;
+
+@end
+
+
+@implementation $classname$
+
+- (id)initWithDict:(NSMutableDictionary*)dict{
+    self = [super init];
+    if (self) {
+        if (dict) {
+            _dict = dict;
+        }
+        else{
+            _dict = [NSMutableDictionary dictionaryWithCapacity:3];
+        }
+    }
+    return self;
+}
+- (id)init{
+    self = [super init];
+    if(self){
+        _dict = [NSMutableDictionary dictionaryWithCapacity:3];
+    }
+    return self;
+}
++ ($classname$*) newEmptySample{
+    return [[$classname$ alloc] init];
+}
+
+#pragma mark properties
+
+$$properties$$
+
+@end
+
+@implementation NSMutableDictionary($classname$)
+
+@dynamic $keyInParent$;
+
+-(void)set$keyInParent$:($classname$ *)value{
+    if (value == nil) {
+        [self removeObjectForKey:@"$keyInParent$"];
+    }
+    self[@"$keyInParent$"] = value.dict;
+}
+
+- ($classname$ *)$keyInParent${
+    if (!self[@"$keyInParent$"]) {
+        return nil;
+    }
+    return [[$classname$ alloc] initWithDict:self[@"$keyInParent$"]];
+}
+
+@end

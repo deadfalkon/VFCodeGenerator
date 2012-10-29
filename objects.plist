@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SampleClass</key>
+	<dict>
+		<key>customKeys</key>
+		<dict>
+			<key>inherits-from</key>
+			<string>NSObject</string>
+			<key>keyInParent</key>
+			<string>answer</string>
+		</dict>
+		<key>properties</key>
+		<array>
+			<dict>
+				<key>retainType</key>
+				<string>strong</string>
+				<key>name</key>
+				<string>foo</string>
+				<key>type</key>
+				<string>NSString*</string>
+			</dict>
+			<dict>
+				<key>retainType</key>
+				<string>strong</string>
+				<key>name</key>
+				<string>bar</string>
+				<key>type</key>
+				<string>NSString*</string>
+			</dict>
+			<dict>
+				<key>retainType</key>
+				<string>assign</string>
+				<key>name</key>
+				<string>someBoolean</string>
+				<key>type</key>
+				<string>BOOL</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

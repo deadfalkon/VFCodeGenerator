@@ -1,0 +1,17 @@
+@dynamic $name$;
+
+-(void)set$Name$:(BOOL)value{
+    self.dict[@"$name$"] = [NSNumber numberWithBool:value];
+}
+
+-(BOOL)$name${
+    return [self.dict[@"$name$"] boolValue];
+}
+
+- (void)remove$Name${
+    [self.dict removeObjectForKey:@"$name$"];
+}
+
+- (BOOL)is$Name$Set{
+    return [self.dict objectForKey:@"$name$"] != nil;
+}

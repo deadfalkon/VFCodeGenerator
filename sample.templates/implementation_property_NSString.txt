@@ -1,0 +1,14 @@
+@dynamic $name$;
+
+-(void)set$Name$:(NSString*)value{
+    if (value != nil) {
+        self.dict[@"$name$"] = value;
+    }
+    else{
+        [self.dict removeObjectForKey:@"$name$"];
+    }
+}
+
+-(NSString *)$name${
+    return self.dict[@"$name$"];
+}
